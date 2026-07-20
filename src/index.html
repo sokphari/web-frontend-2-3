@@ -14,18 +14,20 @@
   }
 </style>
 <body class="bg-blue-700">
-  <header class="flex justify-between items-center w-full h-[100px] px-16 bg-black">
+  <header class=" sm:flex-col flex flex-col md:flex-row justify-between md:space-y-0 space-y-4 items-center w-full min-h-[100px] px-16 bg-black">
     <!-- logo -->
     <div>
-      <h3 class="text-white">MyLogo</h3>
+      <img src="../src/assets/logo/logo.png" class="w-20 h-20" alt="">
     </div>
     <!-- nav -->
     <nav>
-      <ul class="text-white space-x-6 text-xl flex">
-        <li>Home</li>
-        <li>Category</li>
-        <li>Callection</li>
-        <li>Contact Us</li>
+      <ul class="text-white space-x-6 md:text-xl sm:text-[16px] flex">
+        <li class="hover:bg-red-800 px-4 py-4 rounded-lg">
+          <a href="">Home</a>
+        </li>
+        <li class="hover:bg-red-800 px-4 py-4 rounded-lg">Category</li>
+        <li class="hover:bg-red-800 px-4 py-4 rounded-lg">Callection</li>
+        <li class="hover:bg-red-800 px-4 py-4 rounded-lg">Contact Us</li>
       </ul>
     </nav>
     <!-- icon -->
@@ -45,3 +47,7 @@ min-h-screen min-height = 100vh
 flexbox 1d layout
 grid 2d layout , row and column
 -->
+
+
+
+<!-- sm md lg xl xll -->
