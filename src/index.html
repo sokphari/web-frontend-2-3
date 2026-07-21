@@ -9,33 +9,34 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-  *{
-     font-family: "Kantumruy Pro", sans-serif;
+
+  * {
+    font-family: "Kantumruy Pro", sans-serif;
   }
 </style>
-<body class="bg-blue-700">
-  <header class=" sm:flex-col flex flex-col md:flex-row justify-between md:space-y-0 space-y-4 items-center w-full min-h-[100px] px-16 bg-black">
+
+<body class="bg-gray-700 min-h-screen">
+
+  <header class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between">
+
     <!-- logo -->
-    <div>
-      <img src="../src/assets/logo/logo.png" class="w-20 h-20" alt="">
+    <div class="logo flex">
+      <h1 class="text-2xl font-extrabold">Shop<span class="text-blue-600">Ease</span></h1>
     </div>
-    <!-- nav -->
-    <nav>
-      <ul class="text-white space-x-6 md:text-xl sm:text-[16px] flex">
-        <li class="hover:bg-red-800 px-3 py-4 rounded-lg">
-          <a href="">Home</a>
-        </li>
-        <li class="hover:bg-red-800 px-3 py-4 rounded-lg">Category</li>
-        <li class="hover:bg-red-800 px-3 py-4 rounded-lg">Callection</li>
-        <li class="hover:bg-red-800 px-3 py-4 rounded-lg">Contact Us</li>
-      </ul>
-    </nav>
+    <!-- search -->
+    <div class="relative">
+      <input class="py-3 border w-[990px] pl-5 rounded-md" type="search" placeholder="search for product,brand...">
+      <div class="py-[12.8px] px-8 rounded-r-md rounded-l-sm bg-blue-600 absolute right-0 top-0">
+          <i class="fa-solid fa-magnifying-glass text-white w-full"></i>
+      </div>
+    </div>
     <!-- icon -->
-    <div class="icon text-2xl space-x-4 text-white">
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-regular fa-user"></i>
-    </div>
+     <div class="icon text-2xl space-x-3">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-user"></i>
+     </div>
+
   </header>
 
 </body>
