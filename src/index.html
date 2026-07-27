@@ -1,34 +1,34 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-  * {
-    font-family: "Kantumruy Pro", sans-serif;
-  }
-</style>
-
-<body class="bg-gray-700 min-h-screen">
-
-  <header class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between">
-
-    <!-- logo -->
-    <div class="logo flex">
-      <h1 class="text-2xl font-extrabold">Shop<span class="text-blue-600">Ease</span></h1>
-    </div>
-    <!-- search -->
-    <div class="relative">
-      <input class="py-3 border w-[990px] pl-5 rounded-md" type="search" placeholder="search for product,brand...">
-      <div class="py-[12.8px] px-8 rounded-r-md rounded-l-sm bg-blue-600 absolute right-0 top-0">
-        <i class="fa-solid fa-magnifying-glass text-white w-full"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+    * {
+      font-family: "Kantumruy Pro", sans-serif;
+    }
+  </style>
+  <body class="bg-gray-700 min-h-screen">
+    <header
+      class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between"
+    >
+      <!-- logo -->
+      <div class="logo flex">
+        <h1 class="text-2xl font-extrabold">
+          Shop<span class="text-blue-600">Ease</span>
+        </h1>
       </div>
+<<<<<<< HEAD
     </div>
     <!-- icon -->
     <div class="icon text-2xl space-x-3">
@@ -44,66 +44,292 @@
 
   </section>
   <!-- end of benner -->
-  <section>
-        <div class="flex justify-between items-center mb-6">
-            <h2 class="text-xl font-bold">Shop by Category</h2>
-            <a href="#" class="text-sm text-blue-600 font-medium hover:underline">View All &rarr;</a>
+  <section class="w-full px-6 py-10">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl font-bold">Shop by Category</h2>
+      <a href="#" class="text-sm text-blue-600 font-medium hover:underline">View All &rarr;</a>
+    </div>
+    <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 text-center">
+      <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
+          <i data-lucide="smartphone" class="w-6 h-6"></i>
         </div>
-        <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 text-center">
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="smartphone" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Electronics</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="shirt" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Fashion</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="home" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Home & Kitchen</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="sparkles" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Beauty</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="activity" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Sports</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="more-horizontal" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">More</span>
-            </div>
+        <span class="text-xs font-medium">Electronics</span>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
+          <i data-lucide="shirt" class="w-6 h-6"></i>
         </div>
-        </section>
+        <span class="text-xs font-medium">Fashion</span>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
+          <i data-lucide="home" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xs font-medium">Home & Kitchen</span>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xs font-medium">Beauty</span>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
+          <i data-lucide="activity" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xs font-medium">Sports</span>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
+        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
+          <i data-lucide="more-horizontal" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xs font-medium">More</span>
+      </div>
+    </div>
+  </section>
   <!-- icon sidath -->
-  <section>
+  <section class="w-full px-6 py-10">
+=======
+      <!-- search -->
+      <div class="relative">
+        <input
+          class="py-3 border w-[990px] pl-5 rounded-md mb-6"
+          type="search"
+          placeholder="search for product,brand..."
+        />
+        <div
+          class="py-[12.8px] px-8 rounded-r-md rounded-l-sm bg-blue-600 absolute right-0 top-0"
+        >
+          <i class="fa-solid fa-magnifying-glass text-white w-full"></i>
+        </div>
+      </div>
+      <!-- icon -->
+      <div class="icon text-2xl space-x-3">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </header>
 
-  </section>
-  <!-- end of icon -->
+    <!-- benner cheak hok -->
+    <section class="relative w-full mx-auto p-3">
+      <!-- Banner Image -->
+      <img
+        src="https://i.pinimg.com/1200x/4f/42/a5/4f42a51a57226d88fcc555ded18d25a5.jpg"
+        alt="Banner"
+        class="w-full rounded-2xl"
+      />
 
+      <!-- Content -->
+      <div
+        class="absolute left-10 top-1/2 -translate-y-1/2 xl:top-1/3 lg:left-1/2 lg:-translate-x-1/2 lg:text-center"
+      >
+        <!-- Main title -->
+        <h3
+          class="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+        >
+          Shop Smart.<br />
+          Live Better.
+        </h3>
+        <!-- Paragraph -->
+        <p
+          class="mt-4 text-gray-800 max-w-[70%] sm:text-xl lg:text-2xl lg:max-w-full"
+        >
+          Discover quality products at the best prices.
+        </p>
+        <!-- BTN -->
+        <button
+          class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg sm:px-6 sm:py-3"
+        >
+          Shop Now →
+        </button>
+      </div>
+    </section>
+    <!-- end of benner -->
+    <section>
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-bold">Shop by Category</h2>
+        <a href="#" class="text-sm text-blue-600 font-medium hover:underline"
+          >View All &rarr;</a
+        >
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 text-center">
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Electronics</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="shirt" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Fashion</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="home" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Home & Kitchen</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Beauty</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Sports</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="more-horizontal" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">More</span>
+        </div>
+      </div>
+    </section>
+    <!-- icon sidath -->
+    <section></section>
+    <!-- end of icon -->
+>>>>>>> fba509e4502e2e53fe7ff8ddc848805da7f244f0
+
+    <!-- category srey mean -->
+    <section></section>
+    <!-- end of category -->
+
+<<<<<<< HEAD
   <!-- category srey mean -->
-  <section>
 
-  </section>
+  <!-- Shop by Category -->
+  <section class="w-full px-6 py-10">
+  <!-- Heading -->
+  <div class="flex items-center justify-between mb-8">
+    <h2 class="text-3xl font-bold">Shop by Category</h2>
+
+    <a href="#" class="flex items-center gap-1 text-blue-600 font-medium hover:text-blue-700">
+      View All
+      <span>→</span>
+    </a>
+  </div>
+
+  <!-- Categories -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+
+    <!-- Electronics -->
+    <div class="text-center">
+      <div class="bg-gray-200 rounded-2xl p-4 hover:shadow-lg transition">
+        <img
+          src="https://i.pinimg.com/736x/67/eb/da/67ebdad7e5e6db7b34ed4155e3622c5d.jpg"
+          alt="Electronics"
+          class="w-full h-40 object-cover rounded-xl"
+        />
+      </div>
+      <p class="mt-3 font-medium">Electronics</p>
+    </div>
+
+    <!-- Fashion -->
+    <div class="text-center">
+      <div class="bg-gray-200 rounded-2xl p-4 hover:shadow-lg transition">
+        <img
+          src="https://i.pinimg.com/736x/2f/89/f2/2f89f2d867f6543052452e1922d741a2.jpg"
+          alt="Fashion"
+          class="w-full h-40 object-cover rounded-xl"
+        />
+      </div>
+      <p class="mt-3 font-medium">Fashion</p>
+    </div>
+
+    <!-- Home -->
+    <div class="text-center">
+      <div class="bg-gray-200 rounded-2xl p-4 hover:shadow-lg transition">
+        <img
+          src="https://i.pinimg.com/736x/7c/60/c4/7c60c46a5f0330752c4f484c6b672f2b.jpg"
+          alt="Home"
+          class="w-full h-40 object-cover rounded-xl"
+        />
+      </div>
+      <p class="mt-3 font-medium">Home & Kitchen</p>
+    </div>
+
+    <!-- Beauty -->
+    <div class="text-center">
+      <div class="bg-gray-200 rounded-2xl p-4 hover:shadow-lg transition">
+        <img
+          src="https://i.pinimg.com/736x/ef/71/90/ef71908e73dcd602f346547c71e8fb5e.jpg"
+          alt="Beauty"
+          class="w-full h-40 object-cover rounded-xl"
+        />
+      </div>
+      <p class="mt-3 font-medium">Beauty</p>
+    </div>
+
+    <!-- Sports -->
+    <div class="text-center">
+      <div class="bg-gray-200 rounded-2xl p-4 hover:shadow-lg transition">
+        <img
+          src="https://i.pinimg.com/736x/56/53/55/56535588578f09ecfb01c0fc24bd28f2.jpg"
+          alt="Sports"
+          class="w-full h-40 object-cover rounded-xl"
+        />
+      </div>
+      <p class="mt-3 font-medium">Sports</p>
+    </div>
+
+    <!-- More -->
+    <div class="text-center">
+      <div class="flex items-center justify-center bg-gray-200 rounded-2xl h-48 hover:shadow-lg transition">
+        <span class="text-5xl text-blue-600">•••</span>
+      </div>
+      <p class="mt-3 font-medium">More</p>
+    </div>
+
+  </div>
+</section>
   <!-- end of category -->
+=======
+    <!-- popular product chantha -->
+    <section></section>
+    <!-- end of popular product -->
 
-  <!-- popular product chantha -->
-  <section>
+    <!-- benner chandeth -->
+    <section>
+      <h1>hello</h1>
+    </section>
+    <!-- end of benner  -->
+>>>>>>> fba509e4502e2e53fe7ff8ddc848805da7f244f0
 
+<<<<<<< HEAD
   </section>
+  
   <!-- end of popular product -->
 
   <!-- benner chandeth -->
@@ -127,11 +353,90 @@
     <!-- footer -->
     <section>
 
+<<<<<<< HEAD
+    </section>
+    <!-- end of footer -->  
+    
+=======
+  </section>
+  <!-- end of footer -->
+  <script>
+    lucide.createIcons();
+  </script>
+>>>>>>> c0a9a07a504f434e498c0ac1c2bb1473dd88df36
+</body>
+=======
+    <!-- New Arrival visal -->
+    <section></section>
+    <!-- end of New Arrival -->
+
+    <!-- incon panith -->
+    <section></section>
+    <!-- end of icon -->
+>>>>>>> c0ddd277420b3032a0d69ecf42ddb95bbc1e3356
+
+    <!-- footer sarin-->
+    <section>
+        <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-box">
+                <h2>ShopEase</h2>
+                <p>Your one-stop shop for quality products.</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Shop -->
+            <div class="footer-box">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Deals</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="footer-box">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="footer-box">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            &copy; 2025 ShopEase. All rights reserved.
+        </p>
+
+      </footer>
     </section>
     <!-- end of footer -->
-    
-</body>
-
+  </body>
 </html>
 <!-- 
 h-screen height = 100vh
@@ -139,7 +444,5 @@ min-h-screen min-height = 100vh
 flexbox 1d layout
 grid 2d layout , row and column
 -->
-
-
 
 <!-- sm md lg xl xll -->
