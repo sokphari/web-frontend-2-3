@@ -1,137 +1,215 @@
 <!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
+    * {
+      font-family: "Kantumruy Pro", sans-serif;
+    }
+  </style>
+
+  <body class="bg-gray-700 min-h-screen">
+    <header
+      class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between"
+    >
+      <!-- logo -->
+      <div class="logo flex">
+        <h1 class="text-2xl font-extrabold">
+          Shop<span class="text-blue-600">Ease</span>
+        </h1>
+      </div>
+      <!-- search -->
+      <div class="relative">
+        <input
+          class="py-3 border w-[990px] pl-5 rounded-md"
+          type="search"
+          placeholder="search for product,brand..."
+        />
+        <div
+          class="py-[12.8px] px-8 rounded-r-md rounded-l-sm bg-blue-600 absolute right-0 top-0"
+        >
+          <i class="fa-solid fa-magnifying-glass text-white w-full"></i>
+        </div>
+      </div>
+      <!-- icon -->
+      <div class="icon text-2xl space-x-3">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </header>
+
+    <!-- benner cheat hok -->
+    <section></section>
+    <!-- end of benner -->
+    <section>
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-bold">Shop by Category</h2>
+        <a href="#" class="text-sm text-blue-600 font-medium hover:underline"
+          >View All &rarr;</a
+        >
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 text-center">
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Electronics</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="shirt" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Fashion</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="home" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Home & Kitchen</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Beauty</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">Sports</span>
+        </div>
+        <div
+          class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition"
+        >
+          <div
+            class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600"
+          >
+            <i data-lucide="more-horizontal" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs font-medium">More</span>
+        </div>
+      </div>
+    </section>
+    <!-- icon sidath -->
+    <section></section>
+    <!-- end of icon -->
+
+    <!-- category srey mean -->
+    <section></section>
+    <!-- end of category -->
+
+    <!-- popular product chantha -->
+    <section></section>
+    <!-- end of popular product -->
+    
+    <!-- benner chandeth -->
+    <section>
+    <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Promo Banner</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <!-- Bootstrap Icons (for the arrow) -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
 </head>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+<body class="bg-light p-4">
 
-  * {
-    font-family: "Kantumruy Pro", sans-serif;
-  }
-</style>
-
-<body class="bg-gray-700 min-h-screen">
-
-  <header class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between">
-
-    <!-- logo -->
-    <div class="logo flex">
-      <h1 class="text-2xl font-extrabold">Shop<span class="text-blue-600">Ease</span></h1>
-    </div>
-    <!-- search -->
-    <div class="relative">
-      <input class="py-3 border w-[990px] pl-5 rounded-md" type="search" placeholder="search for product,brand...">
-      <div class="py-[12.8px] px-8 rounded-r-md rounded-l-sm bg-blue-600 absolute right-0 top-0">
-        <i class="fa-solid fa-magnifying-glass text-white w-full"></i>
+  <div class="container">
+    <!-- Banner Wrapper -->
+    <div class="row align-items-center rounded-4 p-4 p-md-5 text-white" 
+         style="background-color: #0d6efd; background-image: radial-gradient(circle at 60% 50%, #157bfb, #0a58ca); overflow: hidden;">
+      
+      <!-- Left Content Column -->
+      <div class="col-md-7 text-center text-md-start mb-4 mb-md-0">
+        <h1 class="fw-bold mb-2 text-nowrap" style="font-size: calc(1.5rem + 1.5vw);">
+          Big Deals. Bigger Savings.
+        </h1>
+        <p class="fs-5 opacity-75 mb-4">
+          Up to 50% off on top products
+        </p>
+        <a href="#" class="btn btn-warning fw-semibold px-4 py-2 rounded-3 text-dark transition-all" 
+           style="background-color: #ffc107; border: none;">
+          Explore Deals <i class="bi bi-arrow-right ms-2"></i>
+        </a>
       </div>
+      
+      <!-- Right Image/Illustration Column -->
+      <div class="col-md-5 d-flex justify-content-center justify-content-md-end position-relative">
+        <!-- SVG shopping bags for a clean, code-only look matching the image -->
+        <svg xmlns="http://w3.org" viewBox="0 0 400 250" class="img-fluid" style="max-height: 180px;">
+          <!-- Small right bag -->
+          <g transform="translate(280, 110)">
+            <path d="M20,40 C20,10 60,10 60,40" fill="none" stroke="#664d03" stroke-width="4"/>
+            <path d="M0,40 L80,40 L75,130 L5,130 Z" fill="#ffb703"/>
+          </g>
+          <!-- Big back bag -->
+          <g transform="translate(140, 30)">
+            <path d="M40,50 C40,10 120,10 120,50" fill="none" stroke="#664d03" stroke-width="5"/>
+            <path d="M0,50 L160,50 L150,210 L10,210 Z" fill="#ffb703" opacity="0.9"/>
+          </g>
+          <!-- Front left bag -->
+          <g transform="translate(50, 70)">
+            <path d="M35,45 C35,10 95,10 95,45" fill="none" stroke="#4d3802" stroke-width="5"/>
+            <path d="M0,45 L130,45 L120,170 L10,170 Z" fill="#ffc107"/>
+          </g>
+        </svg>
+      </div>
+
     </div>
-    <!-- icon -->
-    <div class="icon text-2xl space-x-3">
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-regular fa-user"></i>
-    </div>
+  </div>
 
-  </header>
-
-  <!-- benner cheat hok -->
-  <section>
-
-  </section>
-  <!-- end of benner -->
-  <section>
-        <div class="flex justify-between items-center mb-6">
-            <h2 class="text-xl font-bold">Shop by Category</h2>
-            <a href="#" class="text-sm text-blue-600 font-medium hover:underline">View All &rarr;</a>
-        </div>
-        <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 text-center">
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="smartphone" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Electronics</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="shirt" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Fashion</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="home" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Home & Kitchen</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="sparkles" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Beauty</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="activity" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">Sports</span>
-            </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition">
-            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-2 text-blue-600">
-                <i data-lucide="more-horizontal" class="w-6 h-6"></i>
-            </div>
-            <span class="text-xs font-medium">More</span>
-            </div>
-        </div>
-        </section>
-  <!-- icon sidath -->
-  <section>
-
-  </section>
-  <!-- end of icon -->
-
-  <!-- category srey mean -->
-  <section>
-
-  </section>
-  <!-- end of category -->
-
-  <!-- popular product chantha -->
-  <section>
-
-  </section>
-  <!-- end of popular product -->
-
-  <!-- benner chandeth -->
-  <section>
-    <h1>hello</h1>
-  </section>
-  <!-- end of benner  -->
-
-  <!-- New Arrival visal -->
-  <section>
-
-  </section>
-  <!-- end of New Arrival -->
-
-  <!-- incon panith -->
-  <section>
-
-  </section>
-  <!-- end of icon -->
-
-  <!-- footer sarin-->
-  <section>
-
-  </section>
-  <!-- end of footer -->
-   
 </body>
+</html>
 
+    </section>
+    <!-- end of benner  -->
+
+    <!-- New Arrival visal -->
+    <section></section>
+    <!-- end of New Arrival -->
+
+    <!-- incon panith -->
+    <section></section>
+    <!-- end of icon -->
+
+    <!-- footer sarin-->
+    <section></section>
+    <!-- end of footer -->
+  </body>
 </html>
 <!-- 
 h-screen height = 100vh
@@ -139,7 +217,5 @@ min-h-screen min-height = 100vh
 flexbox 1d layout
 grid 2d layout , row and column
 -->
-
-
 
 <!-- sm md lg xl xll -->
