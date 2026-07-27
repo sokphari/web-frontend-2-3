@@ -4,6 +4,6 @@
     "tailwindcss": "^4.3.2"
   },
   "scripts": {
-    "sweetlove":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   }
 }
