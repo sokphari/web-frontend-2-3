@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+    * {
+      font-family: "Kantumruy Pro", sans-serif;
+    }
+  </style>
+
+<body class="bg-white min-h-screen">
+  <header class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between">
+    <!-- logo -->
+    <div class="logo flex">
+      <h1 class="text-2xl font-extrabold">
+        Shop<span class="text-blue-600">Ease</span>
+      </h1>
+    </div>
+
+    </div>
+    <!-- icon -->
+    <div class="icon text-2xl space-x-3">
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-regular fa-user"></i>
+    </div>
+
+  </header>
+
+  <!-- benner up to card sidath -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6 flex-1 w-full space-y-10">
+
+        <!-- HERO PROMO BANNER -->
+        <div class="bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 rounded-3xl p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden relative shadow-sm">
+        <div class="max-w-lg z-10">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+            Best Deals<br />Up to 50% Off
+            </h1>
+            <p class="text-slate-700 text-sm sm:text-base mt-2 font-medium">Limited time offers on top products!</p>
+            <button class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-6 py-3 rounded-xl flex items-center gap-2 shadow-md transition">
+            Shop Deals <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+        </div>
+        <!-- Banner Graphic Image -->
+        <div class="relative z-10 flex justify-center">
+            <img src="https://images.unsplash.com/photo-1546213290-e1b492ab3eee?auto=format&fit=crop&w=500&q=80" alt="Shopping Deals" class="object-contain h-48 w-64 rounded-2xl drop-shadow-md" />
+        </div>
+        </div>
+
+        <!-- HOT DEALS SECTION -->
+        <section>
+        <!-- Title & Countdown Timer Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <h2 class="text-xl font-bold text-slate-900">Hot Deals</h2>
+            
+            <!-- Timer Badge -->
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 border border-slate-200 px-4 py-2 rounded-full self-start sm:self-auto">
+            <span>Ends in:</span>
+            <span class="bg-slate-800 text-white px-2 py-0.5 rounded">02</span> :
+            <span class="bg-slate-800 text-white px-2 py-0.5 rounded">15</span> :
+            <span class="bg-slate-800 text-white px-2 py-0.5 rounded">30</span> :
+            <span class="bg-slate-800 text-white px-2 py-0.5 rounded">45</span>
+            </div>
+        </div>
+
+        <!-- Deals Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 relative shadow-sm">
+            <span class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-30%</span>
+            <button class="absolute top-3 right-3 text-slate-400 hover:text-red-500 transition">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <div class="pt-6">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80" alt="Smart Watch" class="w-full h-40 object-contain mb-4" />
+                <h3 class="text-sm font-semibold text-slate-800">Smart Watch</h3>
+                <div class="flex items-center gap-2 mt-1">
+                <span class="text-base font-bold text-red-600">$41.99</span>
+                <span class="text-xs text-slate-400 line-through">$59.99</span>
+                </div>
+                <div class="text-xs text-amber-500 flex items-center gap-1 mt-1">
+                <i class="fa-solid fa-star"></i> 4.6 <span class="text-slate-400">(95)</span>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 relative shadow-sm">
+            <span class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-20%</span>
+            <button class="absolute top-3 right-3 text-slate-400 hover:text-red-500 transition">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <div class="pt-6">
+                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=300&q=80" alt="Wireless Earbuds" class="w-full h-40 object-contain mb-4" />
+                <h3 class="text-sm font-semibold text-slate-800">Wireless Earbuds</h3>
+                <div class="flex items-center gap-2 mt-1">
+                <span class="text-base font-bold text-red-600">$23.99</span>
+                <span class="text-xs text-slate-400 line-through">$29.99</span>
+                </div>
+                <div class="text-xs text-amber-500 flex items-center gap-1 mt-1">
+                <i class="fa-solid fa-star"></i> 4.8 <span class="text-slate-400">(120)</span>
+                </div>
+            </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 relative shadow-sm">
+            <span class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">-40%</span>
+            <button class="absolute top-3 right-3 text-slate-400 hover:text-red-500 transition">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <div class="pt-6">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80" alt="Running Shoes" class="w-full h-40 object-contain mb-4" />
+                <h3 class="text-sm font-semibold text-slate-800">Running Shoes</h3>
+                <div class="flex items-center gap-2 mt-1">
+                <span class="text-base font-bold text-red-600">$53.99</span>
+                <span class="text-xs text-slate-400 line-through">$89.99</span>
+                </div>
+                <div class="text-xs text-amber-500 flex items-center gap-1 mt-1">
+                <i class="fa-solid fa-star"></i> 4.8 <span class="text-slate-400">(64)</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- View All Deals Button -->
+        <div class="text-center mt-8">
+            <button class="bg-blue-50 text-blue-600 hover:bg-blue-100 font-semibold text-xs px-6 py-2.5 rounded-xl inline-flex items-center gap-1.5 transition">
+            View All Deals <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </button>
+        </div>
+        </section>
+
+        <!-- AUTHENTICATION CARD (LOGIN / REGISTER) -->
+        
+
+        <!-- login kongchhay -->
+        <section>
+
+        </section>
+
+
+    </main>
+
+
+  
+
+  <!-- footer sarin-->
+    <section>
+    <footer class="bg-gray-900 text-white rounded-2xl w-11/12 mx-auto mt-16 p-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- ShopEase -->
+        <div>
+            <h2 class="text-3xl font-bold mb-4">
+            Shop<span class="text-blue-500">Ease</span>
+            </h2>
+
+            <p class="text-gray-400 mb-6">
+            Your are chop shop for quality products.
+            </p>
+
+            <div class="flex gap-4 text-xl">
+            <a href="#"
+                class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-blue-600 transition">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#"
+                class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-pink-500 transition">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#"
+                class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#"
+                class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-red-600 transition">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            </div>
+        </div>
+
+        <!-- Shop -->
+        <div>
+            <h3 class="font-bold text-xl mb-4">Shop</h3>
+
+            <ul class="space-y-3 text-gray-400">
+            <li><a href="#" class="hover:text-white">Category</a></li>
+            <li><a href="#" class="hover:text-white">Popular</a></li>
+            <li><a href="#" class="hover:text-white">New Arrivals</a></li>
+            <li><a href="#" class="hover:text-white">Deals</a></li>
+            </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div>
+            <h3 class="font-bold text-xl mb-4">Customer Service</h3>
+
+            <ul class="space-y-3 text-gray-400">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white">Shipping</a></li>
+            <li><a href="#" class="hover:text-white">Returns</a></li>
+            </ul>
+        </div>
+
+        <!-- Account -->
+        <div>
+            <h3 class="font-bold text-xl mb-4">Account</h3>
+
+            <ul class="space-y-3 text-gray-400">
+            <li><a href="#" class="hover:text-white">Login</a></li>
+            <li><a href="#" class="hover:text-white">Register</a></li>
+            <li><a href="#" class="hover:text-white">My Orders</a></li>
+            <li><a href="#" class="hover:text-white">Wishlist</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+        <hr class="border-gray-700 my-8">
+
+        <p class="text-center text-gray-500">
+        © 2025 ShopEase. All rights reserved.
+        </p>
+
+    </footer>
+    </section>
+    <!-- end of footer -->
+</body>
+  <script>
+    lucide.createIcons();
+  </script>
+</html>
+<!-- sidath
+kong chhay -->
