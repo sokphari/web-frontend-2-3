@@ -1,19 +1,5 @@
 <!doctype html>
 <html>
-<<<<<<< HEAD
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
->>>>>>> 48ff5dc1b2ed966cdde06a596d8b1b6a581d31d0
 
 <head>
   <meta charset="UTF-8" />
@@ -32,23 +18,151 @@
 </style>
 
 <body class="bg-white min-h-screen">
-  <header class="bg-gray-100 w-full min-h-20 items-center flex px-16 justify-between">
-    <!-- logo -->
-    <div class="logo flex">
-      <h1 class="text-2xl font-extrabold">
-        Shop<span class="text-blue-600">Ease</span>
-      </h1>
-    </div>
+  <header class="bg-white border-b border-gray-200 w-full min-h-20 items-center flex px-8 md:px-16 justify-between gap-6 shadow-sm">
+  <!-- 1. Logo (Left) -->
+  <div class="logo flex items-center shrink-0">
+    <h1 class="text-2xl font-extrabold tracking-tight text-gray-900">
+      Shop<span class="text-blue-600">Ease</span>
+    </h1>
+  </div>
 
+  <!-- 2. Search Bar (Center) -->
+  <div class="flex-1 max-w-xl mx-4">
+    <div class="relative w-full">
+      <input 
+        type="text" 
+        placeholder="Search products, brands, and categories..." 
+        class="w-full bg-gray-100 text-gray-800 text-sm rounded-full pl-11 pr-24 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all border border-transparent focus:border-transparent"
+      />
+      <!-- Search Icon (Inside Input) -->
+      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <!-- Search Button -->
+      <button class="absolute right-1 top-1 bottom-1 bg-blue-600 hover:bg-blue-700 text-white px-4 text-xs font-semibold rounded-full transition-colors flex items-center">
+        Search
+      </button>
     </div>
-    <!-- icon -->
-    <div class="icon text-2xl space-x-3">
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-regular fa-user"></i>
-    </div>
+  </div>
 
+  <!-- 3. Actions & Icons (Right) -->
+  <div class="flex items-center gap-4 text-gray-600 shrink-0">
+    <!-- Wishlist / Favorites -->
+    <button class="p-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-full transition-colors relative" aria-label="Favorites">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      </svg>
+    </button>
+
+    <!-- Shopping Cart with Badge -->
+    <button class="p-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-full transition-colors relative" aria-label="Shopping Cart">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+      </svg>
+      <!-- Item Count Badge -->
+      <span class="absolute top-1 right-1 bg-blue-600 text-white text-[10px] font-bold h-4 min-w-4 px-1 rounded-full flex items-center justify-center">
+        3
+      </span>
+    </button>
+
+    <!-- User Account -->
+    <button class="p-2.5 hover:bg-gray-100 hover:text-blue-600 rounded-full transition-colors" aria-label="User Account">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
+    </button>
+  </div>
   </header>
+  <!-- kongchhay -->
+  <section class="w-full bg-white ">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex items-center justify-between py-3">
+      
+      <!-- Mobile Menu Toggle Button (Visible on Small Screens) -->
+      <div class="flex lg:hidden">
+        <button type="button" class="text-gray-600 hover:text-blue-600 focus:outline-none p-2 rounded-md" aria-label="Toggle navigation">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links Container -->
+      <ul class="hidden lg:flex items-center justify-center gap-8 md:gap-12 w-full text-sm font-semibold text-gray-700">
+        
+        <!-- 1. Home -->
+        <li class="relative group py-2">
+          <a href="../index.html" class="group-hover:text-blue-600 transition-colors duration-200">
+            Home
+          </a>
+          <!-- Animated Underline Effect -->
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </li>
+
+        <!-- 2. Category (With Dropdown Arrow) -->
+        <li class="relative group py-2 flex items-center gap-1 cursor-pointer">
+          <a href="categories.html" class="group-hover:text-blue-600 transition-colors duration-200">
+            Category
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 group-hover:text-blue-600 group-hover:rotate-180 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+
+          <!-- Dropdown Menu -->
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-48 z-50">
+            <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2 text-sm font-normal text-gray-600">
+              <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition-colors">Electronics</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition-colors">Fashion & Apparel</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition-colors">Home & Living</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 3. Popular (With Dropdown Arrow) -->
+        <li class="relative group py-2 flex items-center gap-1 cursor-pointer">
+          <a href="popular.html" class="group-hover:text-blue-600 transition-colors duration-200">
+            Popular
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 group-hover:text-blue-600 group-hover:rotate-180 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+
+          <!-- Dropdown Menu -->
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-48 z-50">
+            <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2 text-sm font-normal text-gray-600">
+              <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition-colors">Best Sellers</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition-colors">Trending Now</a>
+              <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition-colors">Top Rated</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 4. New Arrivals -->
+        <li class="relative group py-2">
+          <a href="newarrival.html" class="group-hover:text-blue-600 transition-colors duration-200">
+            New Arrivals
+          </a>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </li>
+
+        <!-- 5. Deals -->
+        <li class="relative group py-2">
+          <a href="deals.html" class="group-hover:text-blue-600 transition-colors duration-200 flex items-center gap-1.5">
+            Deals
+            <!-- Optional Badge -->
+            <span class="bg-red-500 text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full uppercase tracking-wider">Hot</span>
+          </a>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  </section>
 
   <!-- benner up to card sidath -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6 flex-1 w-full space-y-10">
